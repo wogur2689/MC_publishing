@@ -1,5 +1,7 @@
-body {
-	background-color: #263238; 
+body { background-color: #263238; }
+
+.nav-pills .nav-link.active {
+	background-color:#BCD8E2;
 }
 
 /*#headerbg {
