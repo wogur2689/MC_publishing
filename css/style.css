@@ -1,24 +1,7 @@
 @charset "UTF-8";
 
-* {
-  margin: 0px;
-  padding: 0px;
-}
-
-ul,
-ol {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-html {
-  background-color: #263238;
-}
-
 body {
+  background-color: #263238;
   display: flex;
   height: 100vh;
   margin: 0px;
