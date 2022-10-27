@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 body {
   background-color: #263238;
   display: flex;
@@ -13,6 +18,7 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
+  position: fixed;
 }
 
 .sidebar_btn {
@@ -23,19 +29,20 @@ body {
 }
 
 main {
-  border: solid #000;
-  border-width: 0 1px;
-  width: 70%;
+  margin-left: 10vh;
+  width: 100%;
+  height: 100%;
 }
 
 #main_content_box {
   display: flex;
-  height: 95%;
+  min-height: 100vh;
 }
 
 #index_box {
   display: flex;
   width: 100px;
+  height: 100vh;
   padding-top: 20px;
   align-items: center;
   flex-direction: column;
@@ -49,6 +56,10 @@ main {
 
 #content_box {
   padding-top: 20px;
+  width: 100%;
+  border: #000000;
+  border-width: 0.5px;
+  border-style: solid;
 }
 
 #content {
@@ -57,16 +68,20 @@ main {
   color: #ffffff;
   font-size: 20px;
   line-height: 150%;
+  min-height: 700px;
 }
 
 #console_box {
-  width: 30%;
+  border-top: #000000;
+  border-style: solid;
+  border-width: 0.5px;
+  height: 30vh;
 }
 
 .tab_box {
   display: flex;
   background-color: #172228;
-  height: 5%;
+  height: 40px;
 }
 
 .tab {
@@ -80,11 +95,12 @@ main {
 }
 
 #console_content_box {
-  height: 95%;
+  height: 90%;
 }
 
 #console {
   padding: 20px;
+  height: 80%;
   background-color: #263238;
   color: white;
   outline: none;
@@ -92,7 +108,6 @@ main {
   resize: none;
   border: none;
   width: 100%;
-  height: 95%;
 }
 
 /*body { background-color: #263238; }
